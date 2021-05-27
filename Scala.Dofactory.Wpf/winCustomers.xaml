@@ -1,0 +1,36 @@
+﻿<Window x:Class="Scala.Dofactory.Wpf.winCustomers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scala.Dofactory.Wpf"
+        mc:Ignorable="d"
+        Title="Customers" Height="450" Width="800" Loaded="Window_Loaded" >
+    <Grid>
+        <GroupBox x:Name="grpCustomers"  Height="400"   Width="305" Margin="10,10,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid>
+                <Button x:Name="btnCustomerNew" Content="Nieuw" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="73" Click="BtnCustomerNew_Click"/>
+                <Button x:Name="btnCustomerEdit" Content="Wijzig" HorizontalAlignment="Left" Height="28" Margin="88,10,0,0" VerticalAlignment="Top" Width="73" Click="BtnCustomerEdit_Click"/>
+                <Button x:Name="btnCustomerDelete" Content="Verwijder" HorizontalAlignment="Left" Height="28" Margin="166,10,0,0" VerticalAlignment="Top" Width="73" Click="btnCustomerDelete_Click"/>
+                <ListBox x:Name="lstCustomers" HorizontalAlignment="Center" Height="325" Margin="0,58,0,0" VerticalAlignment="Top" Width="273" SelectionChanged="LstCustomers_SelectionChanged"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpDetails" HorizontalAlignment="Left" Height="297" Margin="331,10,0,0" VerticalAlignment="Top" Width="453">
+            <Grid>
+                <Button x:Name="btnCustomerSave" Content="Bewaren" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="73" Click="btnCustomerSave_Click"/>
+                <Button x:Name="btnCustomerCancel" Content="Annuleren" HorizontalAlignment="Left" Height="28" Margin="88,10,0,0" VerticalAlignment="Top" Width="73" Click="btnCustomerCancel_Click"/>
+                <Label Content="Familienaam : " HorizontalAlignment="Left" Height="27" Margin="10,62,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Voornaam : " HorizontalAlignment="Left" Height="27" Margin="10,94,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Gemeente : " HorizontalAlignment="Left" Height="27" Margin="10,126,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Land : " HorizontalAlignment="Left" Height="27" Margin="10,158,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Telefoon : " HorizontalAlignment="Left" Height="27" Margin="10,190,0,0" VerticalAlignment="Top" Width="125"/>
+                <TextBox x:Name="txtLastName" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,62,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtFirstName" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,94,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtCity" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,126,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtCountry" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,158,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtPhone" MaxLength="19" HorizontalAlignment="Left" Height="27" Margin="140,190,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

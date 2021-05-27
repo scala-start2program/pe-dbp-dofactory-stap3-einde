@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scala.Dofactory.Wpf", "Scala.Dofactory.Wpf\Scala.Dofactory.Wpf.csproj", "{48003DE3-3D4C-474B-930E-A364A3C52F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scala.Dofactory.Core", "Scala.Dofactory.Core\Scala.Dofactory.Core.csproj", "{B1FC3617-EA22-4C75-9F13-B19E28570BE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48003DE3-3D4C-474B-930E-A364A3C52F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48003DE3-3D4C-474B-930E-A364A3C52F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48003DE3-3D4C-474B-930E-A364A3C52F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48003DE3-3D4C-474B-930E-A364A3C52F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FC3617-EA22-4C75-9F13-B19E28570BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FC3617-EA22-4C75-9F13-B19E28570BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FC3617-EA22-4C75-9F13-B19E28570BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FC3617-EA22-4C75-9F13-B19E28570BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5B92D7A-8A1A-48FF-A573-E13BA732C522}
+	EndGlobalSection
+EndGlobal

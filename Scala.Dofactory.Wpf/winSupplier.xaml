@@ -1,0 +1,40 @@
+﻿<Window x:Class="Scala.Dofactory.Wpf.winSupplier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scala.Dofactory.Wpf"
+        mc:Ignorable="d"
+        Title="Suppliers" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox x:Name="grpSuppliers"  Height="400"   Width="305" Margin="10,10,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid>
+                <Button x:Name="btnSupplierNew" Content="Nieuw" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="73" Click="btnSupplierNew_Click"/>
+                <Button x:Name="btnSupplierEdit" Content="Wijzig" HorizontalAlignment="Left" Height="28" Margin="88,10,0,0" VerticalAlignment="Top" Width="73" Click="btnSupplierEdit_Click"/>
+                <Button x:Name="btnSupplierDelete" Content="Verwijder" HorizontalAlignment="Left" Height="28" Margin="166,10,0,0" VerticalAlignment="Top" Width="73" Click="btnSupplierDelete_Click"/>
+                <ListBox x:Name="lstSuppliers" HorizontalAlignment="Center" Height="325" Margin="0,58,0,0" VerticalAlignment="Top" Width="273" SelectionChanged="lstSuppliers_SelectionChanged"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpDetails" HorizontalAlignment="Left" Height="297" Margin="331,10,0,0" VerticalAlignment="Top" Width="453">
+            <Grid>
+                <Button x:Name="btnSupplierSave" Content="Bewaren" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="73" Click="btnSupplierSave_Click"/>
+                <Button x:Name="btnSupplierCancel" Content="Annuleren" HorizontalAlignment="Left" Height="28" Margin="88,10,0,0" VerticalAlignment="Top" Width="73" Click="btnSupplierCancel_Click"/>
+                <Label Content="Bedrijf : " HorizontalAlignment="Left" Height="27" Margin="10,62,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Contact naam : " HorizontalAlignment="Left" Height="27" Margin="10,94,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Contact functie : " HorizontalAlignment="Left" Height="27" Margin="10,126,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Gemeente : " HorizontalAlignment="Left" Height="27" Margin="10,158,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Land : " HorizontalAlignment="Left" Height="27" Margin="10,190,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Telefoon : " HorizontalAlignment="Left" Height="27" Margin="10,222,0,0" VerticalAlignment="Top" Width="125"/>
+                <Label Content="Fax : " HorizontalAlignment="Left" Height="27" Margin="10,253,0,0" VerticalAlignment="Top" Width="125"/>
+                <TextBox x:Name="txtCompanyName" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,62,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtContactName" MaxLength="48" HorizontalAlignment="Left" Height="27" Margin="140,94,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtContactTitle" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,126,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtCity" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,158,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtCountry" MaxLength="38" HorizontalAlignment="Left" Height="27" Margin="140,190,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtPhone" MaxLength="28" HorizontalAlignment="Left" Height="27" Margin="140,222,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+                <TextBox x:Name="txtFax" MaxLength="28" HorizontalAlignment="Left" Height="27" Margin="140,253,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
